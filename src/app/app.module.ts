@@ -6,16 +6,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { ChartsModule } from 'ng2-charts';
 
 import { MaterialModule } from './material/material.module';
 import { OpenticketsComponent } from './opentickets/opentickets.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PerformanceComponent } from './performance/performance.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    OpenticketsComponent
+    OpenticketsComponent,
+    PerformanceComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     LayoutModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
