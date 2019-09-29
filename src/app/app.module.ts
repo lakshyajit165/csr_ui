@@ -9,6 +9,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 
 import { MaterialModule } from './material/material.module';
 import { OpenticketsComponent } from './opentickets/opentickets.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OpenticketsComponent } from './opentickets/opentickets.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
