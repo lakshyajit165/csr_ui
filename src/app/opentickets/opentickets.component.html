@@ -3,31 +3,31 @@
     <section class="mat-typography opentickets">
         <h1 class="display-4" class="body-2 mat-display-1" >List of open Tickets</h1>
 
-        <mat-grid-list cols="4" rowHeight="60px" *ngFor="let list of tickets" class="mat-elevation-z2" >
+        <div *ngFor="let list of tickets" class="mat-elevation-z2 wrapper" >
                 
-                <mat-grid-tile colspan="1" rowspan="2" >
+                <div>
                    
-                        <h3 class="mat-body-strong">{{ list.description }}</h3>
+                        <h2 class="mat-body-strong">{{ list.description }}</h2>
                     
-                </mat-grid-tile>
-                <mat-grid-tile colspan="1" rowspan="2">
+                </div>
+                <div >
                     <h3 class="mat-body-strong">{{ list.timeCreated | date }}</h3>
-                </mat-grid-tile>
+                </div>
                
-                <mat-grid-tile colspan="1" rowspan="2">
-                    <mat-chip-list *ngFor="let tag of list.tags">
+                <div >
+                    <mat-chip-list *ngFor="let tag of list.tags" class="chips">
                         <mat-chip>{{ tag }}</mat-chip>
                     </mat-chip-list>
-                </mat-grid-tile>
+                </div>
 
-                 <mat-grid-tile colspan="1" rowspan="2" >  
+                 <div>  
                     <button mat-stroked-button color="primary">Assign Me</button>
-                </mat-grid-tile>
+                </div>
                 
                     
                 
                
-        </mat-grid-list>
+            </div>
         
     </section>
     
