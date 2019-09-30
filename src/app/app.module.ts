@@ -12,13 +12,19 @@ import { MaterialModule } from './material/material.module';
 import { OpenticketsComponent } from './opentickets/opentickets.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PerformanceComponent } from './performance/performance.component';
+import { TicketdetailsComponent } from './ticketdetails/ticketdetails.component';
+import { TicketdetailcardComponent } from './ticketdetailcard/ticketdetailcard.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     OpenticketsComponent,
-    PerformanceComponent
+    PerformanceComponent,
+    TicketdetailsComponent,
+    TicketdetailcardComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
